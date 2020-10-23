@@ -1,0 +1,35 @@
+21461:X 22 Oct 2020 02:26:45.982 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+21461:X 22 Oct 2020 02:26:45.982 # Redis version=6.0.8, bits=64, commit=00000000, modified=0, pid=21461, just started
+21461:X 22 Oct 2020 02:26:45.982 # Configuration loaded
+21461:X 22 Oct 2020 02:26:45.983 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+21461:X 22 Oct 2020 02:26:45.983 * Running mode=sentinel, port=26382.
+21461:X 22 Oct 2020 02:26:45.983 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+21461:X 22 Oct 2020 02:26:45.985 # Sentinel ID is 0bb7c8704b8b1ba4607cceed8976c64a2c8a8d26
+21461:X 22 Oct 2020 02:26:45.985 # +monitor master mymaster 127.0.0.1 6381 quorum 2
+21461:X 22 Oct 2020 02:26:45.986 * +slave slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21461:X 22 Oct 2020 02:26:45.988 * +slave slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6381
+21461:X 22 Oct 2020 02:26:46.325 * +sentinel sentinel 0c5996609124b72ca326e466ebd420ec4da042db 127.0.0.1 26381 @ mymaster 127.0.0.1 6381
+21461:X 22 Oct 2020 02:26:51.602 * +sentinel sentinel 40e1358ba9e9089e7e9a53c216c9124b6260ab8f 127.0.0.1 26383 @ mymaster 127.0.0.1 6381
+21461:X 22 Oct 2020 03:21:05.400 # +sdown master mymaster 127.0.0.1 6381
+21461:X 22 Oct 2020 03:21:05.408 # +new-epoch 1
+21461:X 22 Oct 2020 03:21:05.409 # +vote-for-leader 0c5996609124b72ca326e466ebd420ec4da042db 1
+21461:X 22 Oct 2020 03:21:05.483 # +odown master mymaster 127.0.0.1 6381 #quorum 3/2
+21461:X 22 Oct 2020 03:21:05.484 # Next failover delay: I will not start a failover before Thu Oct 22 03:27:06 2020
+21461:X 22 Oct 2020 03:21:05.954 # +config-update-from sentinel 0c5996609124b72ca326e466ebd420ec4da042db 127.0.0.1 26381 @ mymaster 127.0.0.1 6381
+21461:X 22 Oct 2020 03:21:05.954 # +switch-master mymaster 127.0.0.1 6381 127.0.0.1 6391
+21461:X 22 Oct 2020 03:21:05.954 * +slave slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6391
+21461:X 22 Oct 2020 03:21:05.954 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21461:X 22 Oct 2020 03:21:35.995 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21461:X 22 Oct 2020 03:25:15.814 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21461:X 22 Oct 2020 03:25:25.805 * +convert-to-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21461:X 22 Oct 2020 03:34:00.544 # +sdown master mymaster 127.0.0.1 6391
+21461:X 22 Oct 2020 03:34:00.580 # +new-epoch 2
+21461:X 22 Oct 2020 03:34:00.581 # +vote-for-leader 0c5996609124b72ca326e466ebd420ec4da042db 2
+21461:X 22 Oct 2020 03:34:00.627 # +odown master mymaster 127.0.0.1 6391 #quorum 3/2
+21461:X 22 Oct 2020 03:34:00.627 # Next failover delay: I will not start a failover before Thu Oct 22 03:40:01 2020
+21461:X 22 Oct 2020 03:34:01.374 # +config-update-from sentinel 0c5996609124b72ca326e466ebd420ec4da042db 127.0.0.1 26381 @ mymaster 127.0.0.1 6391
+21461:X 22 Oct 2020 03:34:01.374 # +switch-master mymaster 127.0.0.1 6391 127.0.0.1 6381
+21461:X 22 Oct 2020 03:34:01.374 * +slave slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6381
+21461:X 22 Oct 2020 03:34:01.374 * +slave slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21461:X 22 Oct 2020 03:34:31.382 # +sdown slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21461:X 22 Oct 2020 03:37:00.296 # -sdown slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381

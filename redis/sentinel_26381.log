@@ -1,0 +1,60 @@
+21454:X 22 Oct 2020 02:26:42.216 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+21454:X 22 Oct 2020 02:26:42.216 # Redis version=6.0.8, bits=64, commit=00000000, modified=0, pid=21454, just started
+21454:X 22 Oct 2020 02:26:42.216 # Configuration loaded
+21454:X 22 Oct 2020 02:26:42.217 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+21454:X 22 Oct 2020 02:26:42.217 * Running mode=sentinel, port=26381.
+21454:X 22 Oct 2020 02:26:42.217 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+21454:X 22 Oct 2020 02:26:42.219 # Sentinel ID is 0c5996609124b72ca326e466ebd420ec4da042db
+21454:X 22 Oct 2020 02:26:42.219 # +monitor master mymaster 127.0.0.1 6381 quorum 2
+21454:X 22 Oct 2020 02:26:42.220 * +slave slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 02:26:42.222 * +slave slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 02:26:48.023 * +sentinel sentinel 0bb7c8704b8b1ba4607cceed8976c64a2c8a8d26 127.0.0.1 26382 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 02:26:51.603 * +sentinel sentinel 40e1358ba9e9089e7e9a53c216c9124b6260ab8f 127.0.0.1 26383 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.313 # +sdown master mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.403 # +odown master mymaster 127.0.0.1 6381 #quorum 2/2
+21454:X 22 Oct 2020 03:21:05.403 # +new-epoch 1
+21454:X 22 Oct 2020 03:21:05.403 # +try-failover master mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.405 # +vote-for-leader 0c5996609124b72ca326e466ebd420ec4da042db 1
+21454:X 22 Oct 2020 03:21:05.409 # 40e1358ba9e9089e7e9a53c216c9124b6260ab8f voted for 0c5996609124b72ca326e466ebd420ec4da042db 1
+21454:X 22 Oct 2020 03:21:05.409 # 0bb7c8704b8b1ba4607cceed8976c64a2c8a8d26 voted for 0c5996609124b72ca326e466ebd420ec4da042db 1
+21454:X 22 Oct 2020 03:21:05.457 # +elected-leader master mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.458 # +failover-state-select-slave master mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.534 # +selected-slave slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.534 * +failover-state-send-slaveof-noone slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.590 * +failover-state-wait-promotion slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.895 # +promoted-slave slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.895 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:05.951 * +slave-reconf-sent slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:06.563 # -odown master mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:06.978 * +slave-reconf-inprog slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:06.978 * +slave-reconf-done slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:07.048 # +failover-end master mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:21:07.049 # +switch-master mymaster 127.0.0.1 6381 127.0.0.1 6391
+21454:X 22 Oct 2020 03:21:07.049 * +slave slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:21:07.049 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:21:37.099 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:25:16.252 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:00.523 # +sdown master mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:00.576 # +odown master mymaster 127.0.0.1 6391 #quorum 2/2
+21454:X 22 Oct 2020 03:34:00.576 # +new-epoch 2
+21454:X 22 Oct 2020 03:34:00.576 # +try-failover master mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:00.578 # +vote-for-leader 0c5996609124b72ca326e466ebd420ec4da042db 2
+21454:X 22 Oct 2020 03:34:00.581 # 0bb7c8704b8b1ba4607cceed8976c64a2c8a8d26 voted for 0c5996609124b72ca326e466ebd420ec4da042db 2
+21454:X 22 Oct 2020 03:34:00.581 # 40e1358ba9e9089e7e9a53c216c9124b6260ab8f voted for 0c5996609124b72ca326e466ebd420ec4da042db 2
+21454:X 22 Oct 2020 03:34:00.669 # +elected-leader master mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:00.669 # +failover-state-select-slave master mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:00.752 # +selected-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:00.752 * +failover-state-send-slaveof-noone slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:00.828 * +failover-state-wait-promotion slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:01.302 # +promoted-slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:01.302 # +failover-state-reconf-slaves master mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:01.372 * +slave-reconf-sent slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:01.522 * +slave-reconf-inprog slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:01.688 # -odown master mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:02.577 * +slave-reconf-done slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:02.635 # +failover-end master mymaster 127.0.0.1 6391
+21454:X 22 Oct 2020 03:34:02.636 # +switch-master mymaster 127.0.0.1 6391 127.0.0.1 6381
+21454:X 22 Oct 2020 03:34:02.636 * +slave slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:34:02.636 * +slave slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:34:32.654 # +sdown slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21454:X 22 Oct 2020 03:37:00.262 # -sdown slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381

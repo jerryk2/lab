@@ -1,0 +1,26 @@
+21048:C 22 Oct 2020 00:33:19.194 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+21048:C 22 Oct 2020 00:33:19.194 # Redis version=6.0.8, bits=64, commit=00000000, modified=0, pid=21048, just started
+21048:C 22 Oct 2020 00:33:19.194 # Configuration loaded
+21048:M 22 Oct 2020 00:33:19.195 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+                _._                                                  
+           _.-``__ ''-._                                             
+      _.-``    `.  `_.  ''-._           Redis 6.0.8 (00000000/0) 64 bit
+  .-`` .-```.  ```\/    _.,_ ''-._                                   
+ (    '      ,       .-`  | `,    )     Running in standalone mode
+ |`-._`-...-` __...-.``-._|'` _.-'|     Port: 6379
+ |    `-._   `._    /     _.-'    |     PID: 21048
+  `-._    `-._  `-./  _.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |           http://redis.io        
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+ |`-._`-._    `-.__.-'    _.-'_.-'|                                  
+ |    `-._`-._        _.-'_.-'    |                                  
+  `-._    `-._`-.__.-'_.-'    _.-'                                   
+      `-._    `-.__.-'    _.-'                                       
+          `-._        _.-'                                           
+              `-.__.-'                                               
+
+21048:M 22 Oct 2020 00:33:19.195 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+21048:M 22 Oct 2020 00:33:19.195 # Server initialized
+21048:M 22 Oct 2020 00:33:19.195 # WARNING overcommit_memory is set to 0! Background save may fail under low memory condition. To fix this issue add 'vm.overcommit_memory = 1' to /etc/sysctl.conf and then reboot or run the command 'sysctl vm.overcommit_memory=1' for this to take effect.
+21048:M 22 Oct 2020 00:33:19.195 * Ready to accept connections

@@ -1,0 +1,31 @@
+21468:X 22 Oct 2020 02:26:49.593 # oO0OoO0OoO0Oo Redis is starting oO0OoO0OoO0Oo
+21468:X 22 Oct 2020 02:26:49.593 # Redis version=6.0.8, bits=64, commit=00000000, modified=0, pid=21468, just started
+21468:X 22 Oct 2020 02:26:49.593 # Configuration loaded
+21468:X 22 Oct 2020 02:26:49.594 * Increased maximum number of open files to 10032 (it was originally set to 1024).
+21468:X 22 Oct 2020 02:26:49.594 * Running mode=sentinel, port=26383.
+21468:X 22 Oct 2020 02:26:49.594 # WARNING: The TCP backlog setting of 511 cannot be enforced because /proc/sys/net/core/somaxconn is set to the lower value of 128.
+21468:X 22 Oct 2020 02:26:49.597 # Sentinel ID is 40e1358ba9e9089e7e9a53c216c9124b6260ab8f
+21468:X 22 Oct 2020 02:26:49.597 # +monitor master mymaster 127.0.0.1 6381 quorum 2
+21468:X 22 Oct 2020 02:26:49.597 * +slave slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 02:26:49.599 * +slave slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 02:26:50.080 * +sentinel sentinel 0bb7c8704b8b1ba4607cceed8976c64a2c8a8d26 127.0.0.1 26382 @ mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 02:26:50.491 * +sentinel sentinel 0c5996609124b72ca326e466ebd420ec4da042db 127.0.0.1 26381 @ mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 03:21:05.306 # +sdown master mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 03:21:05.408 # +new-epoch 1
+21468:X 22 Oct 2020 03:21:05.409 # +vote-for-leader 0c5996609124b72ca326e466ebd420ec4da042db 1
+21468:X 22 Oct 2020 03:21:05.953 # +config-update-from sentinel 0c5996609124b72ca326e466ebd420ec4da042db 127.0.0.1 26381 @ mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 03:21:05.953 # +switch-master mymaster 127.0.0.1 6381 127.0.0.1 6391
+21468:X 22 Oct 2020 03:21:05.953 * +slave slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6391
+21468:X 22 Oct 2020 03:21:05.953 * +slave slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21468:X 22 Oct 2020 03:21:36.012 # +sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21468:X 22 Oct 2020 03:25:15.947 # -sdown slave 127.0.0.1:6381 127.0.0.1 6381 @ mymaster 127.0.0.1 6391
+21468:X 22 Oct 2020 03:34:00.500 # +sdown master mymaster 127.0.0.1 6391
+21468:X 22 Oct 2020 03:34:00.580 # +new-epoch 2
+21468:X 22 Oct 2020 03:34:00.581 # +vote-for-leader 0c5996609124b72ca326e466ebd420ec4da042db 2
+21468:X 22 Oct 2020 03:34:01.374 # +config-update-from sentinel 0c5996609124b72ca326e466ebd420ec4da042db 127.0.0.1 26381 @ mymaster 127.0.0.1 6391
+21468:X 22 Oct 2020 03:34:01.374 # +switch-master mymaster 127.0.0.1 6391 127.0.0.1 6381
+21468:X 22 Oct 2020 03:34:01.374 * +slave slave 127.0.0.1:6392 127.0.0.1 6392 @ mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 03:34:01.374 * +slave slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 03:34:31.457 # +sdown slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 03:37:00.057 # -sdown slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
+21468:X 22 Oct 2020 03:37:10.025 * +convert-to-slave slave 127.0.0.1:6391 127.0.0.1 6391 @ mymaster 127.0.0.1 6381
